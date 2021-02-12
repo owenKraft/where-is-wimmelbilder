@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Wimmelbilder from './Wimmelbilder'
 import Header from './Header'
 import "toastify-js/src/toastify.css"
@@ -9,41 +9,70 @@ import firebase from 'firebase'
 
 
 const Game = (props) => {
-  const [chars,setChars] = useState([
-      {
-        name: "Yeti",
-        active: true,
-        found: false,
-        xCoord: 925,
-        yCoord: 545,
-        xMin: 911,
-        xMax: 967,
-        yMin: 503,
-        yMax: 599
-      },
-      {
-        name: "Rooster",
-        active: false,
-        found: false,
-        xCoord: 643,
-        yCoord: 1366,
-        xMin: 612,
-        xMax: 701,
-        yMin: 1333,
-        yMax: 1395
-      },
-      {
-        name: "Mouse",
-        active: false,
-        found: false,
-        xCoord: 1517,
-        yCoord: 1168,
-        xMin: 1501,
-        xMax: 1541,
-        yMin: 1155,
-        yMax: 1195
-      },
-  ])
+  const [chars,setChars] = useState(
+    []
+  //   [
+  //     {
+  //       name: "Yeti",
+  //       active: true,
+  //       found: false,
+  //       xCoord: 925,
+  //       yCoord: 545,
+  //       xMin: 911,
+  //       xMax: 967,
+  //       yMin: 503,
+  //       yMax: 599
+  //     },
+  //     {
+  //       name: "Rooster",
+  //       active: false,
+  //       found: false,
+  //       xCoord: 643,
+  //       yCoord: 1366,
+  //       xMin: 612,
+  //       xMax: 701,
+  //       yMin: 1333,
+  //       yMax: 1395
+  //     },
+  //     {
+  //       name: "Mouse",
+  //       active: false,
+  //       found: false,
+  //       xCoord: 1517,
+  //       yCoord: 1168,
+  //       xMin: 1501,
+  //       xMax: 1541,
+  //       yMin: 1155,
+  //       yMax: 1195
+  //     },
+  // ]
+  )
+  const charsRef = firebase.database().ref('chars')
+
+  const [charsTest,setCharsTest] = useState([])
+
+  useEffect(() => {
+    charsRef.on('value', (snapshot) => {
+        let chars = snapshot.val()
+        let charsArr = []
+        for(let char in chars){
+            charsArr.push({
+                id: char,
+                name: chars[char].name,
+                active: chars[char].active,
+                found: chars[char].found,
+                xCoord: chars[char].xCoord,
+                yCoord: chars[char].yCoord,
+                xMin: chars[char].xMin,
+                xMax: chars[char].xMax,
+                yMin: chars[char].yMin,
+                yMax: chars[char].yMax
+            })
+        }
+        setChars(charsArr)
+        console.log(charsArr)
+    })      
+  },[])
 
   const updateChars = (chars) => {
     checkForWin(chars)
@@ -122,6 +151,7 @@ const Game = (props) => {
         <div className="App">
             <Header 
                 chars = {chars}
+                // chars = {charsTest}
                 updateChars = {updateChars}
                 displayTime = {props.displayTime}
                 startTimer = {startTimer}
@@ -129,8 +159,10 @@ const Game = (props) => {
             />
             <Wimmelbilder
                 chars = {chars}
+                // chars = {charsTest}
                 updateChars = {updateChars}
             />
+        
         </div>
     </div>
   )

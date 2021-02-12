@@ -5,7 +5,7 @@ import firebase from 'firebase'
 
 const Leaderboard = (props) => {
     const [leaderBoardList,setLeaderBoardList] = useState([])
-    const playerTimesRef = firebase.database().ref('playerTimes').orderByChild("name")
+    const playerTimesRef = firebase.database().ref('playerTimes')
 
     useEffect(() => {
         playerTimesRef.on('value', (snapshot) => {

@@ -1,22 +1,32 @@
 import React from 'react'
 
 const Char = (props) => {
-    const char = props.char
+    let char = props.char
     let activeClass = ""
     let found = ""
 
-    if(char.active){
+    if(char !== undefined && char.active){
         activeClass = "charActive"
     } 
     
-    if(char.found){
+    if(char !== undefined && char.found){
         found = "found"
+    }
+    let charDiv
+
+    if(char === undefined){
+        charDiv = ""
+    } else {
+        charDiv =   <div key={char.name || ""} className={`char ${activeClass} ${found}`} onClick={(e) => props.changeActiveStatus(e)}>
+                        {char.name || ""}
+                    </div>
     }
 
     return (
-        <div key={char.name} className={`char ${activeClass} ${found}`} onClick={(e) => props.changeActiveStatus(e)}>
-            {char.name}
+        <div>
+            {charDiv}
         </div>
+        
     )
 }
 

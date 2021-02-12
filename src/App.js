@@ -27,8 +27,6 @@ function App() {
     window.location.href = "/where-is-wimmelbilder/#/leaderboard";
   }
 
-
-
   return (
     <div>
       <HashRouter basename="/where-is-wimmelbilder/">
