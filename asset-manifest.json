@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/where-is-wimmelbilder/static/css/main.bd7b0e02.chunk.css",
-    "main.js": "/where-is-wimmelbilder/static/js/main.2e9559c0.chunk.js",
-    "main.js.map": "/where-is-wimmelbilder/static/js/main.2e9559c0.chunk.js.map",
+    "main.js": "/where-is-wimmelbilder/static/js/main.20d5643b.chunk.js",
+    "main.js.map": "/where-is-wimmelbilder/static/js/main.20d5643b.chunk.js.map",
     "runtime-main.js": "/where-is-wimmelbilder/static/js/runtime-main.c4c90d68.js",
     "runtime-main.js.map": "/where-is-wimmelbilder/static/js/runtime-main.c4c90d68.js.map",
     "static/css/2.f56fa55c.chunk.css": "/where-is-wimmelbilder/static/css/2.f56fa55c.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.f56fa55c.chunk.css",
     "static/js/2.0dc83b3f.chunk.js",
     "static/css/main.bd7b0e02.chunk.css",
-    "static/js/main.2e9559c0.chunk.js"
+    "static/js/main.20d5643b.chunk.js"
   ]
 }
