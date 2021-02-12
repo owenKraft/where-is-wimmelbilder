@@ -130,6 +130,15 @@ ul {
   margin-top: 10px;
 }
 
+.modal-message-body ul {
+  margin: 25px;
+}
+
+.modal-message-body li span {
+  position: relative;
+  left: -10px;
+}
+
 .modal-content input {
   margin-top: 20px;
   padding: 5px;
@@ -192,4 +201,9 @@ ul {
 
 .github-link a {
   color: black;
+}
+
+.timer {
+  font-size: 1.5rem;
+  font-weight: bold;
 }

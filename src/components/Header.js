@@ -38,7 +38,7 @@ const Header = (props) => {
                 </div>
             </div>
 
-            <div>
+            <div className="timer">
                 {props.displayTime}
             </div>
 

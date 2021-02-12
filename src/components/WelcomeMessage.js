@@ -9,12 +9,12 @@ const WelcomeMessage = () => {
                     It's been a busy day on the slope and we've lost a few of our friends. If you could find them for us, it'd be greatly appreciated!
                 </p>
                 <ul>
-                    <li>Yeti</li>
-                    <li>Rooster</li>
-                    <li>Mouse</li>
+                    <li><span>Yeti</span></li>
+                    <li><span>Rooster</span></li>
+                    <li><span>Mouse</span></li>
                 </ul>
                 <p>
-                    When you've found our missing friends, just <strong>click on them</strong> so we know to find them.
+                    When you've found our missing friends, just <strong style={{color: "#26962d"}}>click on them</strong> so we know to find them.
                 </p>
             </div>
         </div>
