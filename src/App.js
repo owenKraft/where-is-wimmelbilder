@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div>
-      <HashRouter basename="/wimmelbilder">
+      <HashRouter basename="/where-is-wimmelbilder">
         <Switch>
           <Route 
             path="/" exact
