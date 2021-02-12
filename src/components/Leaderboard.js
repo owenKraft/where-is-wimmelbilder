@@ -24,7 +24,7 @@ const Leaderboard = (props) => {
     },[])
 
     const redirectToHome = () => {
-        window.location.href = "/"
+        window.location.href = "/where-is-wimmelbilder"
     }
 
     return(

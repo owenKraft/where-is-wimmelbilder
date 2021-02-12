@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import './App.css'
-import { HashRouter, Switch, Route, useHistory} from "react-router-dom"
+import { HashRouter, Switch, Route} from "react-router-dom"
 import "toastify-js/src/toastify.css"
 import Leaderboard from './components/Leaderboard'
 import firebase from 'firebase'
@@ -11,7 +11,6 @@ function App() {
   const [gameStatus,setGameStatus] = useState("welcome")
   const [playerInfo,setPlayerInfo] = useState()
   const [displayTime,setDisplayTime] = useState("00:00")
-  // const history = useHistory();
 
   const submitToLeaderboard = () => {
     let name = document.getElementById("name-input").value
@@ -25,7 +24,6 @@ function App() {
     const playerTimesRef = firebase.database().ref('playerTimes')
     playerTimesRef.push(playerTime)
 
-    // history.push(`/leaderboard`)
     window.location.href = "/where-is-wimmelbilder/#/leaderboard";
   }
 
