@@ -32,7 +32,8 @@ const Leaderboard = (props) => {
             <img className="image-banner" src={image} alt="sylvan-hill-header"></img>
             <div className="leaderboard-header">
                 <h1>Leaderboard <Emoji symbol="🏆" label="trophy" /></h1>
-                
+                <button className="leaderboard-btn" onClick={redirectToHome}>Play again</button>
+
             </div>
             <div className="leaderboard-list-header">
                 <h2>Name</h2>

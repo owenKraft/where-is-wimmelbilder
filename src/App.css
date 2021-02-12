@@ -110,7 +110,7 @@ ul {
 }
 
 .found {
-  color: green;
+  color: #26962d;
   text-decoration: line-through;
 }
 
@@ -161,6 +161,9 @@ ul {
 
 .leaderboard-header {
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .leaderboard-list-header {
@@ -188,6 +191,7 @@ ul {
   border-radius: 5px;
   background-color: transparent;
   color: #26962d;
+  height: 30px;
 }
 
 .github-icon {
