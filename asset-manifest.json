@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/where-is-wimmelbilder/static/css/main.bd7b0e02.chunk.css",
+    "main.js": "/where-is-wimmelbilder/static/js/main.2e9559c0.chunk.js",
+    "main.js.map": "/where-is-wimmelbilder/static/js/main.2e9559c0.chunk.js.map",
+    "runtime-main.js": "/where-is-wimmelbilder/static/js/runtime-main.c4c90d68.js",
+    "runtime-main.js.map": "/where-is-wimmelbilder/static/js/runtime-main.c4c90d68.js.map",
+    "static/css/2.f56fa55c.chunk.css": "/where-is-wimmelbilder/static/css/2.f56fa55c.chunk.css",
+    "static/js/2.0dc83b3f.chunk.js": "/where-is-wimmelbilder/static/js/2.0dc83b3f.chunk.js",
+    "static/js/2.0dc83b3f.chunk.js.map": "/where-is-wimmelbilder/static/js/2.0dc83b3f.chunk.js.map",
+    "index.html": "/where-is-wimmelbilder/index.html",
+    "static/css/2.f56fa55c.chunk.css.map": "/where-is-wimmelbilder/static/css/2.f56fa55c.chunk.css.map",
+    "static/css/main.bd7b0e02.chunk.css.map": "/where-is-wimmelbilder/static/css/main.bd7b0e02.chunk.css.map",
+    "static/js/2.0dc83b3f.chunk.js.LICENSE.txt": "/where-is-wimmelbilder/static/js/2.0dc83b3f.chunk.js.LICENSE.txt",
+    "static/media/wimmelbilder.80effeab.jpg": "/where-is-wimmelbilder/static/media/wimmelbilder.80effeab.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c4c90d68.js",
+    "static/css/2.f56fa55c.chunk.css",
+    "static/js/2.0dc83b3f.chunk.js",
+    "static/css/main.bd7b0e02.chunk.css",
+    "static/js/main.2e9559c0.chunk.js"
+  ]
+}
