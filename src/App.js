@@ -23,7 +23,7 @@ function App() {
     setPlayerInfo(playerTime)
     const playerTimesRef = firebase.database().ref('playerTimes')
     playerTimesRef.push(playerTime)
-    window.location.href = "/leaderboard";
+    window.location.href = "where-is-wimmelbilder/#/leaderboard";
   }
 
   return (
