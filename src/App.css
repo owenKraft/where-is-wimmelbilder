@@ -179,6 +179,7 @@ ul {
 .leaderboard-btn-div {
   display: flex;
   justify-content: right;
+  margin-bottom: 50px;
 }
 
 .leaderboard-btn {
