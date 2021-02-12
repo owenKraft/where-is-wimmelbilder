@@ -1,3 +1,12 @@
+
+:root{
+  --header-height-px: 60px;
+}
+
+ul {
+  list-style-position: inside;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +44,152 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.wrapper {
+  display: grid;
+  grid-template-columns:
+    1fr
+    min(65ch, 100%)
+    1fr;
+}
+.wrapper > * {
+  grid-column: 2;
+}
+.full-bleed {
+  width: 100%;
+  grid-column: 1 / 4;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  top: 0;
+  position: fixed;
+  background-color: white;
+  height: var(--header-height-px);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wimmelbilder {
+  margin-top: var(--header-height-px);
+}
+
+.charSelector {
+  display: flex;
+  align-items: center;
+}
+
+.charSelector span {
+  margin-right: 10px;
+}
+
+.charOptions {
+  display: flex;
+}
+
+.char {
+  border-radius: 10px;
+  padding: 5%;
+  margin-right: 10px;
+}
+
+.charActive {
+}
+
+.found {
+  color: green;
+  text-decoration: line-through;
+}
+
+.toast-info {
+
+}
+
+.toast-success {
+  color: white;
+}
+
+.modal-message-body {
+  text-align: left;
+}
+
+.modal-message-body * {
+  margin-top: 10px;
+}
+
+.modal-content input {
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  border: 0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+.swal-button {
+  background-color: #26962d;
+}
+
+.image-banner {
+  object-position: 0 0;
+  object-fit: cover;
+  max-height: 200px;
+  width: 100%;
+}
+
+.leaderboard-header {
+  margin-top: 20px;
+}
+
+.leaderboard-list-header {
+  display: flex;
+  justify-content: space-between;
+  color: #26962d;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.leaderboard-list-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.leaderboard-btn-div {
+  display: flex;
+  justify-content: right;
+}
+
+.leaderboard-btn {
+  padding: 5px;
+  border: 1px solid #26962d;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #26962d;
+}
+
+.github-icon {
+  height:16px;
+  margin: 5px;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+}
+
+.github-link a {
+  color: black;
 }
